@@ -6,12 +6,14 @@
     <title>@ViewData["Title"] - Келечек</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />  
+
+
 </head>
 <body>
     <header id="header">
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark">
             <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">                    
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
                     Келечек
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
@@ -19,19 +21,10 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse d-lg-inline-flex flex-lg-row-reverse">
-                    <ul class="navbar-nav flex-grow-1 justify-content-end text-center">
+                    <ul class="navbar-nav flex-grow-1 justify-content-end text-center">                        
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="/">Главная</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-light" href="/Home/Portfolio">Портфолио</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-light" href="/Home/Services">Сервисы</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-light" href="/Home/AboutUs">О нас</a>
-                        </li>
+                            <a class="nav-link text-light" href="/Home/Portfolio">Наши Продукты</a>
+                        </li>                        
                         <li class="nav-item">
                             <a class="nav-link text-light btn btn-outline-dark border border-warning" href="/Home/Contact">Связаться с нами</a>
                         </li>
@@ -42,6 +35,7 @@
     </header>
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
     <div>
         <main role="main">
@@ -49,12 +43,43 @@
         </main>
     </div>
 
-    <footer class="border-top bg-dark text-light pt-5 pb-5 ">
-        <div class="container text-center">
-            Авторское право &copy; 2020 - Компания Келечек. Все права защищены
+    <footer class="border-top bg-dark text-light">
+        <div class="container">
+            <div class="row mx-auto p-1 w-100">
+                <div class="col-sm">
+                    <div class="row">
+                        <div class="col-2 p-2">
+                            <i class="fa fa-phone" style="font-size:48px;" aria-hidden="true"></i>
+                        </div>
+                        <div class="col">
+                            <h3>Телефонный номер</h3>
+                            <p>+996 776707009</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="row">
+                        <div class="col-2 p-2">
+                            <i class="fa fa-envelope" style="font-size:48px;"></i>
+                        </div>
+                        <div class="col">
+                            <h3>Эл. адрес</h3>
+                            <p>kelechek2020@rambler.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="p-3 justify-content-center border-top">
+                <a class="p-2" href="/en"><u>Main Page</u></a>
+                <a class="p-2" href="/Home/Portfolio"><u>Наши Продукты</u></a>
+                <a class="p-2" href="/Home/Contact"><u>Связаться с нами</u></a>
+            </div>
+            <div class="text-center border-top p-3">
+                Авторское право &copy; 2020 - Компания Келечек. Все права защищены
+            </div>
         </div>
     </footer>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
     <script src="~/js/site.js" asp-append-version="true"></script>
     <script>
         let $btn = $('#header');

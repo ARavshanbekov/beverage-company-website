@@ -23,7 +23,12 @@ namespace kelechekBurulsunFiveWebsite.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult Portfolio()
+        {
+            return View();
+        }
+
+        public IActionResult Contact()
         {
             return View();
         }
