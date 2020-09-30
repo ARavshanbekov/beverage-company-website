@@ -1,14 +1,40 @@
 ﻿@{
-    ViewData["Title"] = "Главная Страница";
+    ViewData["Title"] = "Лечебно-Столовая Минеральная Вода от";
 }
 
-<link href="~/css/owlCorousel/owl.carousel.min.css" rel="stylesheet" />
-<link href="~/css/owlCorousel/owl.theme.default.min.css" rel="stylesheet" />
-<script src="~/js/owlCorousel/owl.carousel.min.js"></script>
+<link href="~/css/numberCounterStyle.css" rel="stylesheet" />
+<script src="~/js/jquery.waypoints.min.js"></script>
+<script src="~/js/jquery.numberCounterUp.js"></script>
+
 <style>
-    .hero-imageForSecondImage {
-        background-image: url('/images/kelechekburulsunfivesecondimage.jpg');
-        /*background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/man-sits-table-works-laptop_85574-7849.webp');*/
+    body, html {
+        height: 100%;
+    }
+
+    .parallaxForMainImage {
+        /* The image used */
+        background-image: url('/images/kelechekburulsunfivemainimage.jpg');
+        /* Full height */
+        height: 100vh;
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: -1;
+    }
+
+    .hero-imageJalalabad27Image {
+        background-image: url('images/kelechekcompanyjalalabad27image.jpg');
+        height: 70vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+
+    .hero-imageAdygeneImage {
+        background-image: url('images/kelechekcompanyadygeneimage.jpg');
         height: 70vh;
         background-position: center;
         background-repeat: no-repeat;
@@ -17,78 +43,105 @@
     }
 </style>
 
-<div>
-    <img src="~/images/kelechekBurulsunFiveMainImage.jpg" class="w-100" />
+<div class="parallaxForMainImage">
 </div>
-<div class="row" style="background-color:#a65bf4;">
+
+<div class="row">
     <div class="col-md m-5">
-        <div><h5><i>Magic Has A Formula</i></h5></div>
-        <div><h2>Simple <i>&amp;</i> Memorable Is The Motto We Live By</h2></div>
+        <div><h5><i>Тоодой зор ден-соолук</i></h5></div>
+        <div><h2>Жалал-Абад №27</h2></div>
         <div>
-            <p>Donec ac laoreet velit. Quisque diam ex, faucibus sed tortor a, dignissim consequat risus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum viverra, eros nec luctus facilisis, nisi nisl tempus purus, vitae congue enim mi pulvinar orci.</p>
-            <p>Nulla pretium sagittis efficitur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam iaculis aliquet blandit. Mauris a neque consequat, ultricies lacus non, pulvinar risus.</p>
+            <p>&laquo;ЖАЛАЛ-АБАД 27&raquo; ПРЕКРАСНО УТОЛЯЕТ ЖАЖДУ, ЭФФЕКТИВНА ПРИ ПЕРЕЕДАНИИ, УСПЕШНО ЛЕЧИТ ИЗЖОГУ И СТИМУЛИРУЕТ ОБМЕН ВЕЩЕСТВ, БЛАГОДАРЯ ЧЕМУ ЧЕЛОВЕК ТЕРЯЕТ ЛИШНИЕ КИЛОГРАММЫ</p>
         </div>
         <div></div>
     </div>
-    <div class="col-md hero-imageForSecondImage">
-
+    <div class="col-md hero-imageJalalabad27Image text-center">
     </div>
+</div>
+<div class="row d-md-flex" style="background-color: #f7f7f7;">
+    <div class="col-md m-5 order-md-2">
+
+        <div><h2>АДЫГЕНЕ</h2></div>
+        <div>
+            <p>ЛЕДНИКОВАЯ ТАЛАЯ ВОДА С УРОЧИЩА АДЫГЕНЕ.</p>
+            <p>ЛЕДНИК АДЫГЕНЕ РОЖДАЕТСЯ НА ВЫСОТЕ 4216 М. В НАЦИОНАЛЬНОМ ПАРКЕ &laquo;АЛА-АРЧА&raquo;</p>
+        </div>
+        <div></div>
+    </div>
+    <div class="col-md hero-imageAdygeneImage text-center order-md-1">
+    </div>
+
+
 </div>
 <div class="row">
-    <div class="col-md p-5">
-        <p><span style="color: #000000;"><i>Item No.</i></span></p>
-        <h3><span style="color: #e4e4e4;">01.</span> Research</h3>
-        <p>Quisque molestie elementum quam molestie malesuada. In sagittis urna vitae blandit molestie. Nam aliquet dui neque, eget tincidunt sem accumsan et. Suspendisse egestas, turpis eu pellentesque aliquam.</p>
+    <div class="col-md m-5">
+        <div><h5><i>Тоодой зор ден-соолук</i></h5></div>
+        <div><h2>Жалал-Абад №27</h2></div>
+        <div>
+            <p>&lt;ЖАЛАЛ-АБАД 27&gt; ПРЕКРАСНО УТОЛЯЕТ ЖАЖДУ, ЭФФЕКТИВНА ПРИ ПЕРЕЕДАНИИ, УСПЕШНО ЛЕЧИТ ИЗЖОГУ И СТИМУЛИРУЕТ ОБМЕН ВЕЩЕСТВ, БЛАГОДАРЯ ЧЕМУ ЧЕЛОВЕК ТЕРЯЕТ ЛИШНИЕ КИЛОГРАММЫ</p>
+        </div>
+        <div></div>
     </div>
-    <div class="col-md p-5">
-        <p><span style="color: #000000;"><i>Item No.</i></span></p>
-        <h3><span style="color: #e4e4e4;">02.</span> Design</h3>
-        <p>Quisque molestie elementum quam molestie malesuada. In sagittis urna vitae blandit molestie. Nam aliquet dui neque, eget tincidunt sem accumsan et. Suspendisse egestas, turpis eu pellentesque aliquam.</p>
-    </div>
-    <div class="col-md p-5">
-        <p><span style="color: #000000;"><i>Item No.</i></span></p>
-        <h3><span style="color: #e4e4e4;">03.</span> Develop</h3>
-        <p>Quisque molestie elementum quam molestie malesuada. In sagittis urna vitae blandit molestie. Nam aliquet dui neque, eget tincidunt sem accumsan et. Suspendisse egestas, turpis eu pellentesque aliquam.</p>
+    <div class="col-md hero-imageJalalabad27Image text-center">
     </div>
 </div>
 
-<div class="bg-dark">
-    <div class="row loop owl-carousel owl-theme my-auto">
-        <div class="item">
-            <img class="p-3 align-self-center" src="~/images/partnerBrands/386-3862812_top-brands-horlicks-logo-transparent-background-hd-png.png" />
-        </div>
-        <div class="item">
-            <img class="p-3 align-self-center" src="~/images/partnerBrands/5bfb0b083f977.png" />
-        </div>
-        <div class="item">
-            <img class="p-3 align-self-center" src="~/images/partnerBrands/7_Intel_400.png" />
-        </div>
-        <div class="item">
-            <img class="p-3 align-self-center" src="~/images/partnerBrands/kisspng-logo-top-glove-company-brand-organization-5b0dff62b64011.5389383415276440027465.png" />
-        </div>
-        <div class="item">
-            <img class="p-3 align-self-center" src="~/images/partnerBrands/top-brands-choose-hickey-media-for-better-results-walmart-logo-hd-11569050809xuhyvjfjpl.png" />
-        </div>
-    </div>
-    <br>
+<div class="p-5 text-center" style="background-color: #f7f7f7;">
+    <h2 class="text-center ">Кто мы?</h2>
+
+    <p>ЗАО «Келечек»  основан  10 октября 1991 года. Инициатором создания ЗАО и его Президентом является Туманов Келдибек Туманович. По сегодняшний день ЗАО «Келечек» представляет собой многоотраслевое, ориентированное на перспективное будущее предприятие, располагающее мощными собственными производственными филиалами.</p>
+
 </div>
 
+<div class="row p-5">
+    <div class="col-lg-4">
+        <div class="single-coutnerup">
+            <p><span class="counter">30</span></p>
+            <h4 class="title">Лет Опыта</h4>
 
+        </div>
+    </div>
+    <div class="col-lg-4">
+        <div class="single-coutnerup">
+            <p><span class="counter">5000</span><span style="font-size: 50px; color: #fc4444;">+</span></p>
+            <h4 class="title">Активные Клиенты</h4>
+        </div>
+    </div>
+    <div class="col-lg-4">
+        <div class="single-coutnerup">
+            <p><span class="counter">17</span></p>
+            <h4 class="title">Видов Ассортиментов</h4>
+        </div>
+    </div>
+</div>
+
+<div class="row m-0 pt-3 pb-3" style="background-color: #f7f7f7;">
+    <div class="col-md-3"></div>
+    <div class="col col-md-6">
+        <form id="frmSendMessage" method="get">
+            <h3 class="pl-3">Оставить сообщение</h3>
+            <div class="form-row p-3">
+                <input type="text" class="form-control" id="txtName" name="txtName" placeholder="Имя и фамилия" required>
+            </div>
+            <div class="form-row p-3">
+                <input type="text" class="form-control" id="txtEmail" name="txtEmail" placeholder="Эл. адрес" required>
+            </div>
+            <div class="form-row p-3">
+                <input type="text" class="form-control" id="txtTheme" name="txtTheme" placeholder="Тема" required>
+            </div>
+            <div class="form-row p-3">
+                <textarea class="form-control" id="txtMessage" name="txtMessage" placeholder="Сообщение" required></textarea>
+            </div>
+            <div class="form-row p-3">
+                <button id="btnSubmitMessage" class="btn btn-danger w-100 justify-content-center" type="submit">
+                    Послать
+                </button>
+            </div>
+        </form>
+    </div>
+    <div class="col-md-3"></div>
+</div>
 
 <script>
-    $(document).ready(function () {
-        var owl = $('.owl-carousel');
-        owl.owlCarousel({
-            items: 4,
-            loop: true,
-            autoplay: true,
-            autoplayTimeout: 1000,
-            autoplayHoverPause: true
-        });
-        $('.play').on('click', function () {
-            owl.trigger('play.owl.autoplay', [1000])
-        })
-        $('.stop').on('click', function () {
-            owl.trigger('stop.owl.autoplay')
-        })
-    })</script>
+    $('.counter').countUp();
+</script>

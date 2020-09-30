@@ -1,0 +1,30 @@
+/*
+    Default Style
+*/
+
+/*@import url('https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap');*/
+:root {
+    --body-font: sans-serif;
+}
+
+* {
+    font-family: var(--body-font);
+}
+
+.single-coutnerup .counter {
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 700;
+    color: #fc4444;
+    margin-bottom: 15px;
+    
+}
+
+.single-coutnerup {
+    text-align: center;
+}
+
+.single-coutnerup .title {
+    font-size: 20px;
+    font-weight: 600;
+}

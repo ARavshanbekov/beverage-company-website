@@ -1,20 +1,31 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Келечек</title>
+    <meta name="Description" content="ЗАО «Келечек»  основан  10 октября 1991 года. Инициатором создания ЗАО и его Президентом является Туманов Келдибек Туманович. По сегодняшний день ЗАО «Келечек» представляет собой многоотраслевое , ориентированное на перспективное будущее предприятие, располагающее мощными собственными производственными филиалами.">
+    <title>@ViewData["Title"] - Компания Келечек</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" />  
+    <link rel="stylesheet" href="~/css/site.css" />
 
+    <style>
+        body {
+            height: 100%;
+        }
 
+        #header img {
+            width: 5vh;
+            height: auto;
+        }
+    </style>
 </head>
 <body>
     <header id="header">
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark">
             <div class="container">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
-                    Келечек
+                    <img src="~/images/kelechekCompanyLogo.webp" />
+                    <b>Келечек</b>
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -26,7 +37,7 @@
                             <a class="nav-link text-light" href="/Home/Portfolio">Наши Продукты</a>
                         </li>                        
                         <li class="nav-item">
-                            <a class="nav-link text-light btn btn-outline-dark border border-warning" href="/Home/Contact">Связаться с нами</a>
+                            <a class="nav-link text-light btn btn-outline-dark border border-danger" href="/Home/Contact">Связаться с нами</a>
                         </li>
                     </ul>
                 </div>
@@ -64,23 +75,22 @@
                         </div>
                         <div class="col">
                             <h3>Эл. адрес</h3>
-                            <p>kelechek2020@rambler.com</p>
+                            <p>kelechek2020@rambler.ru</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="p-3 justify-content-center border-top">
-                <a class="p-2" href="/en"><u>Main Page</u></a>
-                <a class="p-2" href="/Home/Portfolio"><u>Наши Продукты</u></a>
-                <a class="p-2" href="/Home/Contact"><u>Связаться с нами</u></a>
+            <div class="p-3 justify-content-center text-center border-top">
+                <a class="p-2 text-danger" href="/"><u>Стартовая страница</u></a>
+                <a class="p-2 text-danger" href="/Home/Portfolio"><u>Наши Продукты</u></a>
+                <a class="p-2 text-danger" href="/Home/Contact"><u>Связаться с нами</u></a>
             </div>
             <div class="text-center border-top p-3">
                 Авторское право &copy; 2020 - Компания Келечек. Все права защищены
             </div>
         </div>
     </footer>
-
-    <script src="~/js/site.js" asp-append-version="true"></script>
+    
     <script>
         let $btn = $('#header');
 

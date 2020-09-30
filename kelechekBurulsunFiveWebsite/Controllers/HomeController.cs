@@ -18,17 +18,17 @@ namespace kelechekBurulsunFiveWebsite.Controllers
             _logger = logger;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
             return View();
         }
 
-        public IActionResult Portfolio()
+        public async Task<IActionResult> Portfolio()
         {
             return View();
         }
 
-        public IActionResult Contact()
+        public async Task<IActionResult> Contact()
         {
             return View();
         }
