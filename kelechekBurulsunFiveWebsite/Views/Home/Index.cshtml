@@ -11,22 +11,36 @@
         height: 100%;
     }
 
-    .parallaxForMainImage {
-        /* The image used */
-        background-image: url('/images/kelechekburulsunfivemainimage.jpg');
-        /* Full height */
-        height: 100vh;
+    .parallaxBackgroundForMainImage {
+        /* Almost Full height */
+        height: 90vh;
+        min-height: 85vh;
+        max-height: 90vh;              
+    }
+
+    .parallaxImageForMainImage {
+        /* Almost Full height */
+        height: 90vh;
+        min-height: 85vh;
+        max-height: 90vh;
+        width: auto;
         /* Create the parallax scrolling effect */
+        position: fixed;
+        left: 50%;
+        top: 40%;
+        -webkit-transform: translateY(-50%) translateX(-50%);
         background-attachment: fixed;
-        background-position: center;
+        background-position: center center;
         background-repeat: no-repeat;
-        background-size: cover;
-        z-index: -1;
+        background-size: auto 100vh;
+        z-index: -1;        
     }
 
     .hero-imageJalalabad27Image {
-        background-image: url('images/kelechekcompanyjalalabad27image.jpg');
+        background-image: url('/images/kelechekcompanyjalalabad27imagedecreased.webp');
         height: 70vh;
+        min-height: 65vh;
+        max-height: 70vh;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -34,8 +48,10 @@
     }
 
     .hero-imageAdygeneImage {
-        background-image: url('images/kelechekcompanyadygeneimage.jpg');
+        background-image: url('/images/kelechekcompanyadygeneimagedecreased.webp');
         height: 70vh;
+        min-height: 65vh;
+        max-height: 70vh;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -43,105 +59,109 @@
     }
 </style>
 
-<div class="parallaxForMainImage">
+<div class="parallaxBackgroundForMainImage">
+    <img src="~/images/kelechekBurulsunFiveMainImageDemoSecond.webp" class="parallaxImageForMainImage" style="background-position: center center;" />
 </div>
 
-<div class="row">
-    <div class="col-md m-5">
-        <div><h5><i>Тоодой зор ден-соолук</i></h5></div>
-        <div><h2>Жалал-Абад №27</h2></div>
-        <div>
-            <p>&laquo;ЖАЛАЛ-АБАД 27&raquo; ПРЕКРАСНО УТОЛЯЕТ ЖАЖДУ, ЭФФЕКТИВНА ПРИ ПЕРЕЕДАНИИ, УСПЕШНО ЛЕЧИТ ИЗЖОГУ И СТИМУЛИРУЕТ ОБМЕН ВЕЩЕСТВ, БЛАГОДАРЯ ЧЕМУ ЧЕЛОВЕК ТЕРЯЕТ ЛИШНИЕ КИЛОГРАММЫ</p>
-        </div>
-        <div></div>
-    </div>
-    <div class="col-md hero-imageJalalabad27Image text-center">
-    </div>
-</div>
-<div class="row d-md-flex" style="background-color: #f7f7f7;">
-    <div class="col-md m-5 order-md-2">
-
-        <div><h2>АДЫГЕНЕ</h2></div>
-        <div>
-            <p>ЛЕДНИКОВАЯ ТАЛАЯ ВОДА С УРОЧИЩА АДЫГЕНЕ.</p>
-            <p>ЛЕДНИК АДЫГЕНЕ РОЖДАЕТСЯ НА ВЫСОТЕ 4216 М. В НАЦИОНАЛЬНОМ ПАРКЕ &laquo;АЛА-АРЧА&raquo;</p>
-        </div>
-        <div></div>
-    </div>
-    <div class="col-md hero-imageAdygeneImage text-center order-md-1">
-    </div>
-
-
-</div>
-<div class="row">
-    <div class="col-md m-5">
-        <div><h5><i>Тоодой зор ден-соолук</i></h5></div>
-        <div><h2>Жалал-Абад №27</h2></div>
-        <div>
-            <p>&lt;ЖАЛАЛ-АБАД 27&gt; ПРЕКРАСНО УТОЛЯЕТ ЖАЖДУ, ЭФФЕКТИВНА ПРИ ПЕРЕЕДАНИИ, УСПЕШНО ЛЕЧИТ ИЗЖОГУ И СТИМУЛИРУЕТ ОБМЕН ВЕЩЕСТВ, БЛАГОДАРЯ ЧЕМУ ЧЕЛОВЕК ТЕРЯЕТ ЛИШНИЕ КИЛОГРАММЫ</p>
-        </div>
-        <div></div>
-    </div>
-    <div class="col-md hero-imageJalalabad27Image text-center">
-    </div>
-</div>
-
-<div class="p-5 text-center" style="background-color: #f7f7f7;">
-    <h2 class="text-center ">Кто мы?</h2>
-
-    <p>ЗАО «Келечек»  основан  10 октября 1991 года. Инициатором создания ЗАО и его Президентом является Туманов Келдибек Туманович. По сегодняшний день ЗАО «Келечек» представляет собой многоотраслевое, ориентированное на перспективное будущее предприятие, располагающее мощными собственными производственными филиалами.</p>
-
-</div>
-
-<div class="row p-5">
-    <div class="col-lg-4">
-        <div class="single-coutnerup">
-            <p><span class="counter">30</span></p>
-            <h4 class="title">Лет Опыта</h4>
-
-        </div>
-    </div>
-    <div class="col-lg-4">
-        <div class="single-coutnerup">
-            <p><span class="counter">5000</span><span style="font-size: 50px; color: #fc4444;">+</span></p>
-            <h4 class="title">Активные Клиенты</h4>
-        </div>
-    </div>
-    <div class="col-lg-4">
-        <div class="single-coutnerup">
-            <p><span class="counter">17</span></p>
-            <h4 class="title">Видов Ассортиментов</h4>
-        </div>
-    </div>
-</div>
-
-<div class="row m-0 pt-3 pb-3" style="background-color: #f7f7f7;">
-    <div class="col-md-3"></div>
-    <div class="col col-md-6">
-        <form id="frmSendMessage" method="get">
-            <h3 class="pl-3">Оставить сообщение</h3>
-            <div class="form-row p-3">
-                <input type="text" class="form-control" id="txtName" name="txtName" placeholder="Имя и фамилия" required>
+<div class="bg-white">
+    <div class="row">
+        <div class="col-md m-5">
+            <div><h5><i>Тоодой зор ден-соолук</i></h5></div>
+            <div><h2>Жалал-Абад №27</h2></div>
+            <div>
+                <p>&laquo;ЖАЛАЛ-АБАД 27&raquo; ПРЕКРАСНО УТОЛЯЕТ ЖАЖДУ, ЭФФЕКТИВНА ПРИ ПЕРЕЕДАНИИ, УСПЕШНО ЛЕЧИТ ИЗЖОГУ И СТИМУЛИРУЕТ ОБМЕН ВЕЩЕСТВ, БЛАГОДАРЯ ЧЕМУ ЧЕЛОВЕК ТЕРЯЕТ ЛИШНИЕ КИЛОГРАММЫ</p>
             </div>
-            <div class="form-row p-3">
-                <input type="text" class="form-control" id="txtEmail" name="txtEmail" placeholder="Эл. адрес" required>
-            </div>
-            <div class="form-row p-3">
-                <input type="text" class="form-control" id="txtTheme" name="txtTheme" placeholder="Тема" required>
-            </div>
-            <div class="form-row p-3">
-                <textarea class="form-control" id="txtMessage" name="txtMessage" placeholder="Сообщение" required></textarea>
-            </div>
-            <div class="form-row p-3">
-                <button id="btnSubmitMessage" class="btn btn-danger w-100 justify-content-center" type="submit">
-                    Послать
-                </button>
-            </div>
-        </form>
+            <div></div>
+        </div>
+        <div class="col-md hero-imageJalalabad27Image text-center">
+        </div>
     </div>
-    <div class="col-md-3"></div>
+    <div class="row d-md-flex" style="background-color: #f7f7f7; ">
+        <div class="col-md m-5 order-md-2">
+
+            <div><h2>АДЫГЕНЕ</h2></div>
+            <div>
+                <p>ЛЕДНИКОВАЯ ТАЛАЯ ВОДА С УРОЧИЩА АДЫГЕНЕ.</p>
+                <p>ЛЕДНИК АДЫГЕНЕ РОЖДАЕТСЯ НА ВЫСОТЕ 4216 М. В НАЦИОНАЛЬНОМ ПАРКЕ &laquo;АЛА-АРЧА&raquo;</p>
+            </div>
+            <div></div>
+        </div>
+        <div class="col-md hero-imageAdygeneImage text-center order-md-1">
+        </div>
+
+
+    </div>
+    <div class="row">
+        <div class="col-md m-5">
+            <div><h5><i>Тоодой зор ден-соолук</i></h5></div>
+            <div><h2>Жалал-Абад №27</h2></div>
+            <div>
+                <p>&lt;ЖАЛАЛ-АБАД 27&gt; ПРЕКРАСНО УТОЛЯЕТ ЖАЖДУ, ЭФФЕКТИВНА ПРИ ПЕРЕЕДАНИИ, УСПЕШНО ЛЕЧИТ ИЗЖОГУ И СТИМУЛИРУЕТ ОБМЕН ВЕЩЕСТВ, БЛАГОДАРЯ ЧЕМУ ЧЕЛОВЕК ТЕРЯЕТ ЛИШНИЕ КИЛОГРАММЫ</p>
+            </div>
+            <div></div>
+        </div>
+        <div class="col-md hero-imageJalalabad27Image text-center">
+        </div>
+    </div>
+
+    <div class="p-5 text-center" style="background-color: #f7f7f7;">
+        <h2 class="text-center ">Кто мы?</h2>
+        <p>ЗАО «Келечек»  основан  10 октября 1991 года. Инициатором создания ЗАО и его Президентом является Туманов Келдибек Туманович. По сегодняшний день ЗАО «Келечек» представляет собой многоотраслевое, ориентированное на перспективное будущее предприятие, располагающее мощными собственными производственными филиалами.</p>
+
+    </div>
+
+    <div class="row p-5">
+        <div class="col-lg-4">
+            <div class="single-coutnerup">
+                <p><span class="counter">30</span></p>
+                <h4 class="title">Лет Опыта</h4>
+
+            </div>
+        </div>
+        <div class="col-lg-4 pt-5 p-lg-0">
+            <div class="single-coutnerup">
+                <p><span class="counter">5000</span><span style="font-size: 50px; color: #fc4444;">+</span></p>
+                <h4 class="title">Активные Клиенты</h4>
+            </div>
+        </div>
+        <div class="col-lg-4 pt-5 p-lg-0">
+            <div class="single-coutnerup">
+                <p><span class="counter">17</span></p>
+                <h4 class="title">Видов Ассортиментов</h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="row m-0 pt-3 pb-3" style="background-color: #f7f7f7;">
+        <div class="col-md-3"></div>
+        <div class="col col-md-6">
+            <form id="frmSendMessage" method="get">
+                <h3 class="pl-3">Оставить сообщение</h3>
+                <div class="form-row p-3">
+                    <input type="text" class="form-control" id="txtName" name="txtName" placeholder="Имя и фамилия" required>
+                </div>
+                <div class="form-row p-3">
+                    <input type="text" class="form-control" id="txtEmail" name="txtEmail" placeholder="Эл. адрес" required>
+                </div>
+                <div class="form-row p-3">
+                    <input type="text" class="form-control" id="txtTheme" name="txtTheme" placeholder="Тема" required>
+                </div>
+                <div class="form-row p-3">
+                    <textarea class="form-control" id="txtMessage" name="txtMessage" placeholder="Сообщение" required></textarea>
+                </div>
+                <div class="form-row p-3">
+                    <button id="btnSubmitMessage" class="btn btn-danger w-100 justify-content-center" type="submit">
+                        Послать
+                    </button>
+                </div>
+            </form>
+        </div>
+        <div class="col-md-3"></div>
+    </div>
 </div>
 
 <script>
     $('.counter').countUp();
+
+    $('container').height($(window).height() / 2);
 </script>
