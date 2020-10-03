@@ -1,11 +1,15 @@
+using System.Globalization;
 using System.Linq;
 using kelechekBurulsunFiveWebsite.CustomCompressionProvider;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Localization;
+using Microsoft.AspNetCore.Mvc.Razor;
 using Microsoft.AspNetCore.ResponseCompression;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Options;
 
 namespace kelechekBurulsunFiveWebsite
 {
@@ -31,6 +35,24 @@ namespace kelechekBurulsunFiveWebsite
                         new[] { "image/svg+xml" });
             });
 
+            services.AddLocalization(options => options.ResourcesPath = "Resources");
+
+            services.AddMvc().AddViewLocalization(LanguageViewLocationExpanderFormat.Suffix);
+
+            services.Configure<RequestLocalizationOptions>(options =>
+            {
+                var supportedCultures = new[]
+                {
+                    new CultureInfo("ru")
+                //new CultureInfo("en"),
+                //new CultureInfo("tr"),
+        };
+
+                options.DefaultRequestCulture = new RequestCulture(culture: "ru", uiCulture: "ru");
+                options.SupportedCultures = supportedCultures;
+                options.SupportedUICultures = supportedCultures;
+            });
+
             services.AddControllersWithViews();
         }
 
@@ -38,6 +60,9 @@ namespace kelechekBurulsunFiveWebsite
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             app.UseResponseCompression();
+
+            var localizationOption = app.ApplicationServices.GetService<IOptions<RequestLocalizationOptions>>();
+            app.UseRequestLocalization(localizationOption.Value);
 
             if (env.IsDevelopment())
             {

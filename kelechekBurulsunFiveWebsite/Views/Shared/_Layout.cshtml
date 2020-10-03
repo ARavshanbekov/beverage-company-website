@@ -1,5 +1,9 @@
-﻿<!DOCTYPE html>
-<html lang="ru">
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+
+@inject IViewLocalizer Localizer
+
+<!DOCTYPE html>
+<html lang="@Localizer["website language"]">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -32,10 +36,10 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse d-lg-inline-flex flex-lg-row-reverse">
-                    <ul class="navbar-nav flex-grow-1 justify-content-end text-center">                        
+                    <ul class="navbar-nav flex-grow-1 justify-content-end text-center">
                         <li class="nav-item">
                             <a class="nav-link text-light" href="/Home/Portfolio">Наши Продукты</a>
-                        </li>                        
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link text-light btn btn-outline-dark border border-danger" href="/Home/Contact">Связаться с нами</a>
                         </li>
@@ -90,7 +94,7 @@
             </div>
         </div>
     </footer>
-    
+
     <script>
         let $btn = $('#header');
 

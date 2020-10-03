@@ -1,0 +1,62 @@
+﻿@using Microsoft.AspNetCore.Builder
+@using Microsoft.AspNetCore.Http.Features
+@using Microsoft.AspNetCore.Localization
+@using Microsoft.AspNetCore.Mvc.Localization
+@using Microsoft.Extensions.Options
+
+@inject IViewLocalizer Localizer
+@inject IOptions<RequestLocalizationOptions> LocOptions
+
+@{
+
+    var cultureItems = LocOptions.Value.SupportedUICultures
+        .Select(c => new SelectListItem { Value = c.Name, Text = Localizer.GetString(c.Name) })
+        .ToList();
+    var requestCulture = Context.Features.Get<IRequestCultureFeature>();
+
+    string strPathValue = Context.Request.Path.Value;
+    string strSecondForwaredSlashDeleted = String.Empty;
+    string strFixedPathValue = String.Empty;
+    string strFirstForwardSlashDeleted = (strPathValue).Substring((strPathValue).IndexOf("/") + 1);
+    strSecondForwaredSlashDeleted = (strFirstForwardSlashDeleted).Substring((strFirstForwardSlashDeleted).IndexOf("/") + 1);
+
+    if (strFirstForwardSlashDeleted.IndexOf("/") < 0)
+    {
+        strFixedPathValue = $"~/" + requestCulture.RequestCulture.UICulture.Name;
+    }
+    else
+    {
+
+        strFixedPathValue = $"~/" + requestCulture.RequestCulture.UICulture.Name + "/" + strSecondForwaredSlashDeleted;
+    }
+
+    var returnUrl = string.IsNullOrEmpty(Context.Request.Path) ? "~/" : strFixedPathValue;
+}
+
+<div title="@requestCulture?.Provider?.GetType().Name">
+    <form id="selectLanguage" asp-controller="@requestCulture.RequestCulture.UICulture.Name"
+          asp-action="SetLanguage" asp-route-returnUrl="@returnUrl"
+          method="post" class="form-horizontal" role="form">
+        <select id="countries"
+                name="culture"
+                onchange="this.form.submit();"
+                asp-for="@requestCulture.RequestCulture.UICulture.Name"
+                class="my-auto w-100 mr-3">
+            @for (int i = 0; i < cultureItems.Count; i++)
+            {
+                if (String.Equals(cultureItems[i].Value, "en"))
+                {
+                    <option value="en" class="mr-3" data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag us">
+                        @cultureItems[i].Text
+                    </option>
+                }
+                else
+                {
+                    <option value="@cultureItems[i].Value" class="mr-3" data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag @cultureItems[i].Value">
+                        @cultureItems[i].Text
+                    </option>
+                }
+            }
+        </select>
+    </form>
+</div>
