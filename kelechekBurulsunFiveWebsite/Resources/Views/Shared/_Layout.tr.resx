@@ -118,45 +118,45 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="company name" xml:space="preserve">
-    <value>Kelechek Company</value>
+    <value>Kelechek Şirketi</value>
   </data>
   <data name="contact lines" xml:space="preserve">
-    <value>Сontact lines</value>
+    <value>İletişim hatları</value>
   </data>
   <data name="contact us" xml:space="preserve">
-    <value>Contact us</value>
+    <value>Bize Ulaşın</value>
   </data>
   <data name="copyright part" xml:space="preserve">
-    <value>Copyright © 2020 Company Kelechek. All rights reserved.</value>
+    <value>Telif hakkı © 2020 Kelechek Şirketi. Tüm hakları saklıdır.</value>
   </data>
   <data name="email" xml:space="preserve">
-    <value>Email</value>
+    <value>E-posta adresi</value>
   </data>
   <data name="lang address" xml:space="preserve">
-    <value>en</value>
+    <value>tr</value>
   </data>
   <data name="only company name" xml:space="preserve">
     <value>Kelechek</value>
   </data>
   <data name="our products" xml:space="preserve">
-    <value>Our Products</value>
+    <value>Bizim Ürünlerimiz</value>
   </data>
   <data name="pages" xml:space="preserve">
-    <value>Pages</value>
+    <value>Sayfalar</value>
   </data>
   <data name="phone number" xml:space="preserve">
-    <value>Phone Number</value>
+    <value>Telefon numarası</value>
   </data>
   <data name="social connections" xml:space="preserve">
-    <value>Social connections</value>
+    <value>Sosyal bağlantılar</value>
   </data>
   <data name="start page" xml:space="preserve">
-    <value>Start Page</value>
+    <value>Başlangıç Sayfası</value>
   </data>
   <data name="website description" xml:space="preserve">
-    <value>JSC Kelechek was founded on October 10, 1991. The initiator of the creation of the CJSC and its President is Tumanov Keldibek Tumanovich. To this day, CJSC Kelechek is a diversified, future-oriented enterprise with powerful production branches of its own.</value>
+    <value>JSC Kelechek, 10 Ekim 1991'de kuruldu. CJSC'nin ve Başkanının oluşumunun başlatıcısı Tumanov Keldibek Tumanovich'tir. Bugüne kadar CJSC Kelechek, kendine ait güçlü üretim kolları olan, çeşitlendirilmiş, geleceğe yönelik bir kuruluştur.</value>
   </data>
   <data name="website language" xml:space="preserve">
-    <value>en</value>
+    <value>tr</value>
   </data>
 </root>

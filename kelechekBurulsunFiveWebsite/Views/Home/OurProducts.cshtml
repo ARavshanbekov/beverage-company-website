@@ -1,7 +1,11 @@
-﻿
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+
+@inject IViewLocalizer Localizer
+
 @{
-    ViewData["Title"] = "Наши Продукты";
+    ViewData["Title"] = Localizer["page title"];
 }
+
 
 <style>
     #header {
@@ -23,14 +27,14 @@
 
 <div id="loader" class="load-wrapp">
     <div class="load-3">
-        <p>Загрузка Изображений</p>
+        <p>@Localizer["loading images"]</p>
         <div class="line"></div>
         <div class="line"></div>
         <div class="line"></div>
     </div>
 </div>
 
-<h1 class="text-center p-5">Наши Продукты</h1>
+<h1 class="text-center p-5">@Localizer["page title"]</h1>
 
 <div id="Gallery">
     <section id="grid-container" class="transitions-enabled fluid masonry js-masonry grid">

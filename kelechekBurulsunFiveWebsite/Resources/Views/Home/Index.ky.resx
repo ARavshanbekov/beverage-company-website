@@ -117,46 +117,61 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="company name" xml:space="preserve">
-    <value>Kelechek Company</value>
+  <data name="active clients" xml:space="preserve">
+    <value>Активдүү Кардарлар</value>
   </data>
-  <data name="contact lines" xml:space="preserve">
-    <value>Сontact lines</value>
+  <data name="adygene" xml:space="preserve">
+    <value>АДЫГЕНЕ</value>
   </data>
-  <data name="contact us" xml:space="preserve">
-    <value>Contact us</value>
+  <data name="adygene description" xml:space="preserve">
+    <value>АДИГЕНЕ МОҢГҮСҮ &amp;laquo;АЛА-АРЧА&amp;raquo; УЛУТТУК ПАРКЫНДА 4216 М ТӨРӨЛГӨН.</value>
   </data>
-  <data name="copyright part" xml:space="preserve">
-    <value>Copyright © 2020 Company Kelechek. All rights reserved.</value>
+  <data name="adygene subtopic" xml:space="preserve">
+    <value>АДЫГЕНЕ КАПЧЫГАЙЫНАН АЛЫНГАН МОҢГҮ СУУСУ</value>
   </data>
   <data name="email" xml:space="preserve">
-    <value>Email</value>
+    <value>Электрондук Почта</value>
   </data>
-  <data name="lang address" xml:space="preserve">
-    <value>en</value>
+  <data name="jalalabad27" xml:space="preserve">
+    <value>ЖАЛАЛ-АБАД 27</value>
   </data>
-  <data name="only company name" xml:space="preserve">
-    <value>Kelechek</value>
+  <data name="jalalabad27 description" xml:space="preserve">
+    <value>ЧАҢКООНУ ТОЛУК КАНДЫРАТ, ТАМАКТЫ СИҢИРУУГО АБДАН ПАЙДАЛУУ, ИЙГИЛИКТҮҮ ЖҮРӨКТҮН ӨНҮГҮҮСҮН ДААРЫТЫП, МЕТАБОЛИЗМДИ СТИМУЛДАШТЫРАТ, БУЛАРДЫН ЖАРДАМЫ МЕНЕН АДАМ КОШУМЧА КИЛОГРАМДАРДЫ ЖОГОТОТ</value>
   </data>
-  <data name="our products" xml:space="preserve">
-    <value>Our Products</value>
+  <data name="jalalabad27 subtopic" xml:space="preserve">
+    <value>Тоодой зор ден-соолук</value>
   </data>
-  <data name="pages" xml:space="preserve">
-    <value>Pages</value>
+  <data name="jalalabad27 with number" xml:space="preserve">
+    <value>Жалал-Абад №27</value>
   </data>
-  <data name="phone number" xml:space="preserve">
-    <value>Phone Number</value>
+  <data name="message" xml:space="preserve">
+    <value>Билдирүү тексти</value>
   </data>
-  <data name="social connections" xml:space="preserve">
-    <value>Social connections</value>
+  <data name="name and surname" xml:space="preserve">
+    <value>Аты жана Фамилиясы</value>
   </data>
-  <data name="start page" xml:space="preserve">
-    <value>Start Page</value>
+  <data name="page title" xml:space="preserve">
+    <value>"Келечек" ЖАК</value>
   </data>
-  <data name="website description" xml:space="preserve">
-    <value>JSC Kelechek was founded on October 10, 1991. The initiator of the creation of the CJSC and its President is Tumanov Keldibek Tumanovich. To this day, CJSC Kelechek is a diversified, future-oriented enterprise with powerful production branches of its own.</value>
+  <data name="send" xml:space="preserve">
+    <value>Жөнөтүү</value>
   </data>
-  <data name="website language" xml:space="preserve">
-    <value>en</value>
+  <data name="send message" xml:space="preserve">
+    <value>Кабар Калтырыңыз</value>
+  </data>
+  <data name="topic" xml:space="preserve">
+    <value>Тема</value>
+  </data>
+  <data name="types of assortments" xml:space="preserve">
+    <value>Түрдүү Ассортиментер</value>
+  </data>
+  <data name="who we are" xml:space="preserve">
+    <value>Биз Кимбиз?</value>
+  </data>
+  <data name="who we are answer" xml:space="preserve">
+    <value>"Келечек" ЖАК 1991-жылы 10-октябрда негизделген. ЖАКты түзүүнүн демилгечиси жана анын Президенти Туманов Келдибек Туманович. Бүгүнкү күнгө чейин, "Келечек" ЖАК өзүнүн ар тараптуу, келечекке багытталган, өзүнүн күчтүү өндүрүш филиалдары бар болгон ишкана.</value>
+  </data>
+  <data name="years experience" xml:space="preserve">
+    <value>Жылдык тажрыйба</value>
   </data>
 </root>

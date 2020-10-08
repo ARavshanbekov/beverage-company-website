@@ -7,10 +7,23 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="Description" content="ЗАО «Келечек»  основан  10 октября 1991 года. Инициатором создания ЗАО и его Президентом является Туманов Келдибек Туманович. По сегодняшний день ЗАО «Келечек» представляет собой многоотраслевое , ориентированное на перспективное будущее предприятие, располагающее мощными собственными производственными филиалами.">
-    <title>@ViewData["Title"] - Компания Келечек</title>
+    <meta name="Description" content="@Localizer["website description"]">
+    <title>@ViewData["Title"] - @Localizer["company name"]</title>
+
+    <link rel="alternate" href="https://www.kelechek27.com/en" hreflang="en" />
+
+    <link rel="alternate" href="https://www.kelechek27.com/ru" hreflang="ru" />
+
+    <link rel="alternate" href="https://www.kelechek27.com/tr" hreflang="tr" />
+
+    <link rel="alternate" href="https://www.kelechek27.com/ky" hreflang="ky" />
+
+    <link rel="alternate" href="https://www.kelechek27.com" hreflang="x-default" />
+
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
+    <link href="~/css/msdropdown/dd.css" rel="stylesheet" />
+    <link href="~/css/msdropdown/flags.css" rel="stylesheet" />
 
     <style>
         body {
@@ -18,8 +31,8 @@
         }
 
         #header img {
-            width: 5vh;
-            height: auto;
+            width: 32px;
+            height: 32px;
         }
     </style>
 </head>
@@ -27,21 +40,24 @@
     <header id="header">
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark">
             <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
-                    <img src="~/images/kelechekCompanyLogo.webp" />
-                    <b>Келечек</b>
+                @{ string lang = Localizer.GetString("lang address"); }
+                <a class="navbar-brand bg-white p-1 rounded pr-2" asp-area="" asp-controller="@lang" asp-action="Index">
+                    <img src="~/images/kelechekCompanyLogo.webp" style="background-size:48px;" />
+                    <b class="text-danger">@Localizer["only company name"]</b>
                 </a>
+                
                 <button class="navbar-toggler border-danger" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse d-lg-inline-flex flex-lg-row-reverse">
+
                     <ul class="navbar-nav flex-grow-1 justify-content-end text-center">
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="/Home/Portfolio">Наши Продукты</a>
+                            <a class="nav-link text-light" asp-area="" asp-controller="@lang" asp-action="OurProducts">@Localizer["our products"]</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light btn btn-outline-dark border border-danger" href="/Home/Contact">Связаться с нами</a>
+                            <a class="nav-link text-light btn btn-outline-dark border border-danger" asp-area="" asp-controller="@lang" asp-action="Contact">@Localizer["contact us"]</a>
                         </li>
                     </ul>
                 </div>
@@ -50,47 +66,58 @@
     </header>
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/js/msdropdown/jquery.dd.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
     <div>
         <main role="main">
-            @RenderBody()
+            @RenderBody()              
         </main>
     </div>
 
     <footer class="border-top bg-dark text-light">
-        <div class="container">
-            <div class="row mx-auto p-2 w-100">
-                <div class="col-sm">
+        <div class="container">                        
+            <div class="row pt-4">
+                <div class="col-md justify-content-center text-center">
+                    <h4>@Localizer["social connections"]</h4>
+                    <a href="https://www.facebook.com/Kelechek2020" class="d-inline d-md-block"><i class="fa fa-facebook-official" style="font-size:48px; color: #4267B2;" aria-hidden="true"></i><p class="my-auto d-inline">Facebook</p></a>
+                    <a href="https://www.instagram.com/zao.kelechek/" class="d-inline d-md-block"><i class="fa fa-instagram" style="font-size:48px; color: #F56040;" aria-hidden="true"></i> <p class="my-auto d-inline">Instagram</p></a>
+                </div>
+                <div class="col-md justify-content-center text-center">
+                    <h4>@Localizer["pages"]</h4>
+                    <a class="p-2 text-danger d-block" asp-area="" asp-controller="@lang" asp-action="Index"><u>@Localizer["start page"]</u></a>
+                    <a class="p-2 text-danger d-block" asp-area="" asp-controller="@lang" asp-action="OurProducts"><u>@Localizer["our products"]</u></a>
+                    <a class="p-2 text-danger d-block" asp-area="" asp-controller="@lang" asp-action="Contact"><u>@Localizer["contact us"]</u></a>
+                </div>
+                <div class="col-md">
+                    <h4 class="text-center">@Localizer["contact lines"]</h4>
                     <div class="row">
                         <div class="col-2 p-2">
                             <i class="fa fa-phone" style="font-size:48px;" aria-hidden="true"></i>
                         </div>
                         <div class="col">
-                            <h3>Телефонный номер</h3>
-                            <p>+996 776707009</p>
+                            <h3>@Localizer["phone number"]</h3>
+                            <a href="tel:+996776707009" class="text-danger">+996 (776) 70-70-09</a>
                         </div>
                     </div>
-                </div>
-                <div class="col-sm">
                     <div class="row">
                         <div class="col-2 p-2">
                             <i class="fa fa-envelope" style="font-size:48px;"></i>
                         </div>
                         <div class="col">
-                            <h3>Эл. адрес</h3>
-                            <p>kelechek2020@rambler.ru</p>
+                            <h3>@Localizer["email"]</h3>
+                            <a href="mailto:kelechek2020@rambler.ru" class="text-danger">kelechek2020@rambler.ru</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="p-3 justify-content-center text-center border-top">
-                <a class="p-2 text-danger" href="/"><u>Стартовая страница</u></a>
-                <a class="p-2 text-danger" href="/Home/Portfolio"><u>Наши Продукты</u></a>
-                <a class="p-2 text-danger" href="/Home/Contact"><u>Связаться с нами</u></a>
-            </div>
-            <div class="text-center border-top p-3">
-                Авторское право &copy; 2020 - Компания Келечек. Все права защищены
+            <div class="row border-top pb-1">
+                <div class="col-md pt-3">
+                    <span class="text-left">@await Html.PartialAsync("_SelectLanguagePartial")</span>
+                </div>
+                <div class="col-md text-center p-3">
+                    @Localizer["copyright part"]
+                </div>
             </div>
         </div>
     </footer>
@@ -126,6 +153,13 @@
 
         });
     </script>
+
+    <script>
+        $(document).ready(function () {
+            $("#countries").msDropdown();
+        })
+    </script>
+
     @RenderSection("Scripts", required: false)
 </body>
 </html>

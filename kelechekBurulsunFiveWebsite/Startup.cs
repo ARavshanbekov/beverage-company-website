@@ -43,9 +43,10 @@ namespace kelechekBurulsunFiveWebsite
             {
                 var supportedCultures = new[]
                 {
-                    new CultureInfo("ru")
-                //new CultureInfo("en"),
-                //new CultureInfo("tr"),
+                    new CultureInfo("ru"),
+                new CultureInfo("en"),
+                new CultureInfo("tr"),
+                new CultureInfo("ky")
         };
 
                 options.DefaultRequestCulture = new RequestCulture(culture: "ru", uiCulture: "ru");

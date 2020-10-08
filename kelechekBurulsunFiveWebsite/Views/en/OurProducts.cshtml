@@ -1,0 +1,99 @@
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+
+@inject IViewLocalizer Localizer
+
+@{
+    ViewData["Title"] = Localizer["page title"];
+}
+
+
+<style>
+    #header {
+        position: relative;
+    }
+
+    body {
+        height: 100%;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+</style>
+
+<link href="~/css/loadingAnimationcss.css" rel="stylesheet" />
+<link href="~/css/portfolioGallery.css" rel="stylesheet" />
+
+<div id="loader" class="load-wrapp">
+    <div class="load-3">
+        <p>@Localizer["loading images"]</p>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+</div>
+
+<h1 class="text-center p-5">@Localizer["page title"]</h1>
+
+<div id="Gallery">
+    <section id="grid-container" class="transitions-enabled fluid masonry js-masonry grid">
+        <article class="lighthouse sea">
+            <img src="~/images/Gallery/IMG_7897(1).webp" />
+        </article>
+        <article class="beach bird">
+            <img src="~/images/Gallery/IMG_71252(1).webp" />
+        </article>
+        <article class="sea">
+            <img src="~/images/Gallery/IMG_7135(1).webp" />
+        </article>
+        <article class="beach people rock sea">
+            <img src="~/images/Gallery/IMG_7140(1).webp" />
+        </article>
+        <article class="beach sea">
+            <img src="~/images/Gallery/IMG_7227(1).webp" />
+        </article>
+        <article class="bird">
+            <img src="~/images/Gallery/IMG_738312(1).webp" />
+        </article>
+        <article class="bird">
+            <img src="~/images/Gallery/IMG_750922(1).webp" />
+        </article>
+        <article class="sea">
+            <img src="~/images/Gallery/IMG_760512(1).webp" />
+        </article>
+        <article class="lighthouse rock sea">
+            <img src="~/images/Gallery/IMG_7686(1).webp" />
+        </article>
+        <article class="boat">
+            <img src="~/images/Gallery/IMG_78221(1).webp" />
+        </article>
+        <article class="beach people sea">
+            <img src="~/images/Gallery/000(1).webp" />
+        </article>
+        <article class="beach people">
+            <img src="~/images/Gallery/IMG_7935(1).webp" />
+        </article>
+        <article class="rock sea">
+            <img src="~/images/Gallery/IMG_7954(1).webp" />
+        </article>
+        <article class="lighthouse sea">
+            <img src="~/images/Gallery/IMG_8064(1).webp" />
+        </article>
+        <article class="beach people">
+            <img src="~/images/Gallery/IMG_8081(1).webp" />
+        </article>
+        <article class="rock sea">
+            <img src="~/images/Gallery/666(1).webp" />
+        </article>
+    </section>
+</div>
+
+<script src="~/lib/jquery/jquery.isotope.js"></script>
+<script src="~/js/portfolioGallery.js"></script>
+
+<script>
+    jQuery(window).on('load', function () {
+        $('#loader').remove();
+    });
+</script>

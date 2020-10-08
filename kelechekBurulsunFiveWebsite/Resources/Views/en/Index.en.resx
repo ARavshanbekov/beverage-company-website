@@ -117,46 +117,61 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="company name" xml:space="preserve">
-    <value>Kelechek Company</value>
+  <data name="active clients" xml:space="preserve">
+    <value>Active Clients</value>
   </data>
-  <data name="contact lines" xml:space="preserve">
-    <value>Сontact lines</value>
+  <data name="adygene" xml:space="preserve">
+    <value>ADYGENE</value>
   </data>
-  <data name="contact us" xml:space="preserve">
-    <value>Contact us</value>
+  <data name="adygene description" xml:space="preserve">
+    <value>ADYGENE GLACIER IS BORN AT 4216 M. IN &amp;laquo;ALA-ARCHA&amp;raquo; NATIONAL PARK</value>
   </data>
-  <data name="copyright part" xml:space="preserve">
-    <value>Copyright © 2020 Company Kelechek. All rights reserved.</value>
+  <data name="adygene subtopic" xml:space="preserve">
+    <value>GLACIAL MELT WATER FROM THE TREATMENT OF ADYGENE.</value>
   </data>
   <data name="email" xml:space="preserve">
     <value>Email</value>
   </data>
-  <data name="lang address" xml:space="preserve">
-    <value>en</value>
+  <data name="jalalabad27" xml:space="preserve">
+    <value>ZHALAL-ABAD 27</value>
   </data>
-  <data name="only company name" xml:space="preserve">
-    <value>Kelechek</value>
+  <data name="jalalabad27 description" xml:space="preserve">
+    <value>PERFECTLY ELIMINATES THIRST, EFFECTIVE IN OUTSTANDING, SUCCESSFULLY TREATMENT OF HEARTBURN AND STIMULATES THE METABOLISM OF SUBSTANCES THANKS TO WHAT A PERSON LOSES EXTRA KILOGRAMS</value>
   </data>
-  <data name="our products" xml:space="preserve">
-    <value>Our Products</value>
+  <data name="jalalabad27 subtopic" xml:space="preserve">
+    <value>Excellent health like mountains</value>
   </data>
-  <data name="pages" xml:space="preserve">
-    <value>Pages</value>
+  <data name="jalalabad27 with number" xml:space="preserve">
+    <value>Zhalal-Abad №27</value>
   </data>
-  <data name="phone number" xml:space="preserve">
-    <value>Phone Number</value>
+  <data name="message" xml:space="preserve">
+    <value>Message</value>
   </data>
-  <data name="social connections" xml:space="preserve">
-    <value>Social connections</value>
+  <data name="name and surname" xml:space="preserve">
+    <value>Name and Surname</value>
   </data>
-  <data name="start page" xml:space="preserve">
-    <value>Start Page</value>
+  <data name="page title" xml:space="preserve">
+    <value>CJSC Kelechek</value>
   </data>
-  <data name="website description" xml:space="preserve">
-    <value>JSC Kelechek was founded on October 10, 1991. The initiator of the creation of the CJSC and its President is Tumanov Keldibek Tumanovich. To this day, CJSC Kelechek is a diversified, future-oriented enterprise with powerful production branches of its own.</value>
+  <data name="send" xml:space="preserve">
+    <value>Send</value>
   </data>
-  <data name="website language" xml:space="preserve">
-    <value>en</value>
+  <data name="send message" xml:space="preserve">
+    <value>Leave a message</value>
+  </data>
+  <data name="topic" xml:space="preserve">
+    <value>Topic</value>
+  </data>
+  <data name="types of assortments" xml:space="preserve">
+    <value>Types of Assortments</value>
+  </data>
+  <data name="who we are" xml:space="preserve">
+    <value>Who We Are?</value>
+  </data>
+  <data name="who we are answer" xml:space="preserve">
+    <value>CJSC Kelechek was founded on October 10, 1991. The initiator of the CJSC and its President is Tumanov Keldibek Tumanovich. To this day, Kelechek CJSC is a diversified, future-oriented enterprise with its own powerful production branches.</value>
+  </data>
+  <data name="years experience" xml:space="preserve">
+    <value>Years of experience</value>
   </data>
 </root>

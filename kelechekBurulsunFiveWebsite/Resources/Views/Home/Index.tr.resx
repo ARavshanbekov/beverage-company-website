@@ -117,46 +117,61 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="company name" xml:space="preserve">
-    <value>Kelechek Company</value>
+  <data name="active clients" xml:space="preserve">
+    <value>Devamlı olan Müşteriler</value>
   </data>
-  <data name="contact lines" xml:space="preserve">
-    <value>Сontact lines</value>
+  <data name="adygene" xml:space="preserve">
+    <value>ADIGENE</value>
   </data>
-  <data name="contact us" xml:space="preserve">
-    <value>Contact us</value>
+  <data name="adygene description" xml:space="preserve">
+    <value>ADYGENE BUZULU &amp;laquo;ALA-ARCHA&amp;raquo; MİLLİ PARKINDA 4216 M YÜKSEKLİKTE DOĞUYOR</value>
   </data>
-  <data name="copyright part" xml:space="preserve">
-    <value>Copyright © 2020 Company Kelechek. All rights reserved.</value>
+  <data name="adygene subtopic" xml:space="preserve">
+    <value>ADIGENE ARITMASINDAN ALINAN BUZUL ERITME SUYU</value>
   </data>
   <data name="email" xml:space="preserve">
-    <value>Email</value>
+    <value>E-posta adres</value>
   </data>
-  <data name="lang address" xml:space="preserve">
-    <value>en</value>
+  <data name="jalalabad27" xml:space="preserve">
+    <value>CELAL-ABAD 27</value>
   </data>
-  <data name="only company name" xml:space="preserve">
-    <value>Kelechek</value>
+  <data name="jalalabad27 description" xml:space="preserve">
+    <value>SUSUZLUĞU MÜKEMMEL ŞEKILDE GIDERIR, YEMEK SİNDİRİMİNDE ETKİLİ, KALP YANMASINI BAŞARIYLA TEDAVİ EDER VE METABOLİZMİ UYARIR, BUNLARIN YARDIMI İLE İNSAN FAZLA KİLOLARI KAYBEDER</value>
   </data>
-  <data name="our products" xml:space="preserve">
-    <value>Our Products</value>
+  <data name="jalalabad27 subtopic" xml:space="preserve">
+    <value>Dağlar gibi mükemmel sağlık</value>
   </data>
-  <data name="pages" xml:space="preserve">
-    <value>Pages</value>
+  <data name="jalalabad27 with number" xml:space="preserve">
+    <value>Celal-Abad №27</value>
   </data>
-  <data name="phone number" xml:space="preserve">
-    <value>Phone Number</value>
+  <data name="message" xml:space="preserve">
+    <value>Mesaj</value>
   </data>
-  <data name="social connections" xml:space="preserve">
-    <value>Social connections</value>
+  <data name="name and surname" xml:space="preserve">
+    <value>Adı ve Soyadı</value>
   </data>
-  <data name="start page" xml:space="preserve">
-    <value>Start Page</value>
+  <data name="page title" xml:space="preserve">
+    <value>Kelechek K.A.Ş.</value>
   </data>
-  <data name="website description" xml:space="preserve">
-    <value>JSC Kelechek was founded on October 10, 1991. The initiator of the creation of the CJSC and its President is Tumanov Keldibek Tumanovich. To this day, CJSC Kelechek is a diversified, future-oriented enterprise with powerful production branches of its own.</value>
+  <data name="send" xml:space="preserve">
+    <value>Gönder</value>
   </data>
-  <data name="website language" xml:space="preserve">
-    <value>en</value>
+  <data name="send message" xml:space="preserve">
+    <value>Mesaj Bırakın</value>
+  </data>
+  <data name="topic" xml:space="preserve">
+    <value>Konu</value>
+  </data>
+  <data name="types of assortments" xml:space="preserve">
+    <value>Çeşitli Ürün</value>
+  </data>
+  <data name="who we are" xml:space="preserve">
+    <value>Biz Kimiz?</value>
+  </data>
+  <data name="who we are answer" xml:space="preserve">
+    <value> Kelechek KAŞ, 10 Ekim 1991'de kuruldu. KAŞ'nin oluşumunun başlatıcısı ve başkanı Tumanov Keldibek Tumanovich'tir. Bugüne kadar Kelechek KAŞ, kendine ait güçlü üretim kolları olan, çeşitlendirilmiş, geleceğe yönelik bir kuruluştur.</value>
+  </data>
+  <data name="years experience" xml:space="preserve">
+    <value>Yıllık Deneyim</value>
   </data>
 </root>

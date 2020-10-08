@@ -117,6 +117,45 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="company name" xml:space="preserve">
+    <value>Компания Келечек</value>
+  </data>
+  <data name="contact lines" xml:space="preserve">
+    <value>Контактные линии</value>
+  </data>
+  <data name="contact us" xml:space="preserve">
+    <value>Связаться с Нами</value>
+  </data>
+  <data name="copyright part" xml:space="preserve">
+    <value>Авторские права © 2020 Компания Келечек.Все права защищены.</value>
+  </data>
+  <data name="email" xml:space="preserve">
+    <value>Эл. адрес</value>
+  </data>
+  <data name="lang address" xml:space="preserve">
+    <value>ru</value>
+  </data>
+  <data name="only company name" xml:space="preserve">
+    <value>Келечек</value>
+  </data>
+  <data name="our products" xml:space="preserve">
+    <value>Наши Продукты</value>
+  </data>
+  <data name="pages" xml:space="preserve">
+    <value>Страницы</value>
+  </data>
+  <data name="phone number" xml:space="preserve">
+    <value>Телефонный номер</value>
+  </data>
+  <data name="social connections" xml:space="preserve">
+    <value>Социальные связи</value>
+  </data>
+  <data name="start page" xml:space="preserve">
+    <value>Стартовая страница</value>
+  </data>
+  <data name="website description" xml:space="preserve">
+    <value>ЗАО «Келечек»  основан  10 октября 1991 года. Инициатором создания ЗАО и его Президентом является Туманов Келдибек Туманович. По сегодняшний день ЗАО «Келечек» представляет собой многоотраслевое , ориентированное на перспективное будущее предприятие, располагающее мощными собственными производственными филиалами.</value>
+  </data>
   <data name="website language" xml:space="preserve">
     <value>ru</value>
   </data>

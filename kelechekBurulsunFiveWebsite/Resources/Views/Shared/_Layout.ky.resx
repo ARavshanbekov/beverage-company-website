@@ -118,45 +118,45 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="company name" xml:space="preserve">
-    <value>Kelechek Company</value>
+    <value>Келечек Компаниясы</value>
   </data>
   <data name="contact lines" xml:space="preserve">
-    <value>Сontact lines</value>
+    <value>Байланыш линиялары</value>
   </data>
   <data name="contact us" xml:space="preserve">
-    <value>Contact us</value>
+    <value>Биз Менен Байланыш</value>
   </data>
   <data name="copyright part" xml:space="preserve">
-    <value>Copyright © 2020 Company Kelechek. All rights reserved.</value>
+    <value>Автордук укук © 2020 Келечек Компаниясы. Бардык укуктар корголгон.</value>
   </data>
   <data name="email" xml:space="preserve">
-    <value>Email</value>
+    <value>Электрондук почта</value>
   </data>
   <data name="lang address" xml:space="preserve">
-    <value>en</value>
+    <value>ky</value>
   </data>
   <data name="only company name" xml:space="preserve">
-    <value>Kelechek</value>
+    <value>Келечек</value>
   </data>
   <data name="our products" xml:space="preserve">
-    <value>Our Products</value>
+    <value>Биздин Өндүрүштөр</value>
   </data>
   <data name="pages" xml:space="preserve">
-    <value>Pages</value>
+    <value>Баракчалар</value>
   </data>
   <data name="phone number" xml:space="preserve">
-    <value>Phone Number</value>
+    <value>Тел номери</value>
   </data>
   <data name="social connections" xml:space="preserve">
-    <value>Social connections</value>
+    <value>Социалдык байланыштар</value>
   </data>
   <data name="start page" xml:space="preserve">
-    <value>Start Page</value>
+    <value>Башталуу Баракчасы</value>
   </data>
   <data name="website description" xml:space="preserve">
-    <value>JSC Kelechek was founded on October 10, 1991. The initiator of the creation of the CJSC and its President is Tumanov Keldibek Tumanovich. To this day, CJSC Kelechek is a diversified, future-oriented enterprise with powerful production branches of its own.</value>
+    <value>"Келечек" ААК 1991-жылы 10-октябрда негизделген. ЖАКты түзүүнүн демилгечиси жана анын Президенти Туманов Келдибек Туманович. Бүгүнкү күнгө чейин, "Келечек" ЖАКы ар тараптуу, келечекке багытталган, өзүнүн күчтүү өндүрүш филиалдары бар ишкана.</value>
   </data>
   <data name="website language" xml:space="preserve">
-    <value>en</value>
+    <value>ky</value>
   </data>
 </root>

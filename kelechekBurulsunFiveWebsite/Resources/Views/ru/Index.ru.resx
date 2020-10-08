@@ -117,46 +117,61 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="company name" xml:space="preserve">
-    <value>Kelechek Company</value>
+  <data name="active clients" xml:space="preserve">
+    <value>Активные Клиенты</value>
   </data>
-  <data name="contact lines" xml:space="preserve">
-    <value>Сontact lines</value>
+  <data name="adygene" xml:space="preserve">
+    <value>АДЫГЕНЕ</value>
   </data>
-  <data name="contact us" xml:space="preserve">
-    <value>Contact us</value>
+  <data name="adygene description" xml:space="preserve">
+    <value>ЛЕДНИК АДЫГЕНЕ РОЖДАЕТСЯ НА ВЫСОТЕ 4216 М. В НАЦИОНАЛЬНОМ ПАРКЕ &amp;laquo;АЛА-АРЧА&amp;raquo;</value>
   </data>
-  <data name="copyright part" xml:space="preserve">
-    <value>Copyright © 2020 Company Kelechek. All rights reserved.</value>
+  <data name="adygene subtopic" xml:space="preserve">
+    <value>ЛЕДНИКОВАЯ ТАЛАЯ ВОДА С УРОЧИЩА АДЫГЕНЕ.</value>
   </data>
   <data name="email" xml:space="preserve">
-    <value>Email</value>
+    <value>Эл. адрес</value>
   </data>
-  <data name="lang address" xml:space="preserve">
-    <value>en</value>
+  <data name="jalalabad27" xml:space="preserve">
+    <value>ЖАЛАЛ-АБАД 27</value>
   </data>
-  <data name="only company name" xml:space="preserve">
-    <value>Kelechek</value>
+  <data name="jalalabad27 description" xml:space="preserve">
+    <value>ПРЕКРАСНО УТОЛЯЕТ ЖАЖДУ, ЭФФЕКТИВНА ПРИ ПЕРЕЕДАНИИ, УСПЕШНО ЛЕЧИТ ИЗЖОГУ И СТИМУЛИРУЕТ ОБМЕН ВЕЩЕСТВ, БЛАГОДАРЯ ЧЕМУ ЧЕЛОВЕК ТЕРЯЕТ ЛИШНИЕ КИЛОГРАММЫ</value>
   </data>
-  <data name="our products" xml:space="preserve">
-    <value>Our Products</value>
+  <data name="jalalabad27 subtopic" xml:space="preserve">
+    <value>Отличное здоровье как горы</value>
   </data>
-  <data name="pages" xml:space="preserve">
-    <value>Pages</value>
+  <data name="jalalabad27 with number" xml:space="preserve">
+    <value>Жалал-Абад №27</value>
   </data>
-  <data name="phone number" xml:space="preserve">
-    <value>Phone Number</value>
+  <data name="message" xml:space="preserve">
+    <value>Сообщение</value>
   </data>
-  <data name="social connections" xml:space="preserve">
-    <value>Social connections</value>
+  <data name="name and surname" xml:space="preserve">
+    <value>Имя и Фамилия</value>
   </data>
-  <data name="start page" xml:space="preserve">
-    <value>Start Page</value>
+  <data name="page title" xml:space="preserve">
+    <value>ЗАО "Келечек"</value>
   </data>
-  <data name="website description" xml:space="preserve">
-    <value>JSC Kelechek was founded on October 10, 1991. The initiator of the creation of the CJSC and its President is Tumanov Keldibek Tumanovich. To this day, CJSC Kelechek is a diversified, future-oriented enterprise with powerful production branches of its own.</value>
+  <data name="send" xml:space="preserve">
+    <value>Послать</value>
   </data>
-  <data name="website language" xml:space="preserve">
-    <value>en</value>
+  <data name="send message" xml:space="preserve">
+    <value>Оставить сообщение</value>
+  </data>
+  <data name="topic" xml:space="preserve">
+    <value>Тема</value>
+  </data>
+  <data name="types of assortments" xml:space="preserve">
+    <value>Виды Ассортимента</value>
+  </data>
+  <data name="who we are" xml:space="preserve">
+    <value>Кто Мы?</value>
+  </data>
+  <data name="who we are answer" xml:space="preserve">
+    <value>ЗАО «Келечек»  основан  10 октября 1991 года. Инициатором создания ЗАО и его Президентом является Туманов Келдибек Туманович. По сегодняшний день ЗАО «Келечек» представляет собой многоотраслевое, ориентированное на перспективное будущее предприятие, располагающее мощными собственными производственными филиалами.</value>
+  </data>
+  <data name="years experience" xml:space="preserve">
+    <value>Лет Опыта</value>
   </data>
 </root>

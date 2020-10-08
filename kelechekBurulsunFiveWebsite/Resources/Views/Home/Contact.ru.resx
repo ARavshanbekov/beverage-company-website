@@ -117,46 +117,43 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="company name" xml:space="preserve">
-    <value>Kelechek Company</value>
+  <data name="address" xml:space="preserve">
+    <value>Адрес</value>
   </data>
-  <data name="contact lines" xml:space="preserve">
-    <value>Сontact lines</value>
-  </data>
-  <data name="contact us" xml:space="preserve">
-    <value>Contact us</value>
-  </data>
-  <data name="copyright part" xml:space="preserve">
-    <value>Copyright © 2020 Company Kelechek. All rights reserved.</value>
+  <data name="address description" xml:space="preserve">
+    <value>Филиал &amp;laquo;Бурулсун-ПЭТ&amp;raquo; при ЗАО &amp;laquo;Келечек&amp;raquo; г.Жалалабад ул.ВЛКСМ №20</value>
   </data>
   <data name="email" xml:space="preserve">
-    <value>Email</value>
+    <value>Эл. адрес</value>
   </data>
-  <data name="lang address" xml:space="preserve">
-    <value>en</value>
+  <data name="kelechek company" xml:space="preserve">
+    <value>ЗАО "Келечек"</value>
   </data>
-  <data name="only company name" xml:space="preserve">
-    <value>Kelechek</value>
+  <data name="message" xml:space="preserve">
+    <value>Сообщение</value>
   </data>
-  <data name="our products" xml:space="preserve">
-    <value>Our Products</value>
+  <data name="name and surname" xml:space="preserve">
+    <value>Имя и Фамилия</value>
   </data>
-  <data name="pages" xml:space="preserve">
-    <value>Pages</value>
+  <data name="opening time" xml:space="preserve">
+    <value>Время открытия</value>
+  </data>
+  <data name="opening time description" xml:space="preserve">
+    <value>С 8:00 до 17:00</value>
+  </data>
+  <data name="page title" xml:space="preserve">
+    <value>Связаться С Нами</value>
   </data>
   <data name="phone number" xml:space="preserve">
-    <value>Phone Number</value>
+    <value>Телефонный номер</value>
   </data>
-  <data name="social connections" xml:space="preserve">
-    <value>Social connections</value>
+  <data name="send" xml:space="preserve">
+    <value>Послать</value>
   </data>
-  <data name="start page" xml:space="preserve">
-    <value>Start Page</value>
+  <data name="send message" xml:space="preserve">
+    <value>Оставить сообщение</value>
   </data>
-  <data name="website description" xml:space="preserve">
-    <value>JSC Kelechek was founded on October 10, 1991. The initiator of the creation of the CJSC and its President is Tumanov Keldibek Tumanovich. To this day, CJSC Kelechek is a diversified, future-oriented enterprise with powerful production branches of its own.</value>
-  </data>
-  <data name="website language" xml:space="preserve">
-    <value>en</value>
+  <data name="topic" xml:space="preserve">
+    <value>Topic</value>
   </data>
 </root>

@@ -1,23 +1,23 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
 using kelechekBurulsunFiveWebsite.Models;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Http;
+using System.Globalization;
+using System.Threading;
 
-namespace kelechekBurulsunFiveWebsite.Controllers
+namespace kelechekCompanyWebsite.Controllers
 {
-    public class HomeController : Controller
+    public class ruController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        public ruController()
         {
-            _logger = logger;
+            CultureInfo ci = new CultureInfo("ru");
+            Thread.CurrentThread.CurrentCulture = ci;
+            Thread.CurrentThread.CurrentUICulture = ci;
         }
 
         public async Task<IActionResult> Index()
