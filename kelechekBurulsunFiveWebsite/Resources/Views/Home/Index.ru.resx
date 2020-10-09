@@ -160,10 +160,13 @@
     <value>Оставить сообщение</value>
   </data>
   <data name="topic" xml:space="preserve">
-    <value>Topic</value>
+    <value>Тема</value>
   </data>
   <data name="types of assortments" xml:space="preserve">
     <value>Виды Ассортимента</value>
+  </data>
+  <data name="valid" xml:space="preserve">
+    <value>Действительный</value>
   </data>
   <data name="who we are" xml:space="preserve">
     <value>Кто Мы?</value>

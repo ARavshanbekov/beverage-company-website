@@ -127,7 +127,7 @@
     <value>Эл. адрес</value>
   </data>
   <data name="kelechek company" xml:space="preserve">
-    <value>ЗАО "Келечек"</value>
+    <value>ЗАО &amp;ldquo;Келечек&amp;rdquo;</value>
   </data>
   <data name="message" xml:space="preserve">
     <value>Сообщение</value>
@@ -154,6 +154,9 @@
     <value>Оставить сообщение</value>
   </data>
   <data name="topic" xml:space="preserve">
-    <value>Topic</value>
+    <value>Тема</value>
+  </data>
+  <data name="valid" xml:space="preserve">
+    <value>Действительный</value>
   </data>
 </root>

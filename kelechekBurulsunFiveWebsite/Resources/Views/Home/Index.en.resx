@@ -165,6 +165,9 @@
   <data name="types of assortments" xml:space="preserve">
     <value>Types of Assortments</value>
   </data>
+  <data name="valid" xml:space="preserve">
+    <value>Valid</value>
+  </data>
   <data name="who we are" xml:space="preserve">
     <value>Who We Are?</value>
   </data>

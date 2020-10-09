@@ -127,7 +127,7 @@
     <value>Электрондук почта</value>
   </data>
   <data name="kelechek company" xml:space="preserve">
-    <value>"Келечек" ЖАК</value>
+    <value>&amp;ldquo;Келечек&amp;rdquo; ЖАК</value>
   </data>
   <data name="message" xml:space="preserve">
     <value>Билдирүү тексти</value>

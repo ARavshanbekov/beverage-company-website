@@ -7,7 +7,7 @@
 }
 
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD6ZtDc_Uz617sMSw5q1qrQpivSaThl_Tc&callback=initMap&libraries=&v=weekly"
         defer></script>
@@ -69,7 +69,7 @@
             </div>
             <div class="col">
                 <h3>@Localizer["phone number"]</h3>
-                <a href="tel:+996776707009">+996 (776) 70-70-09</a>
+                <a href="tel:+996776707009" class="text-danger"><u>+996 (776) 70-70-09</u></a>
             </div>
         </div>
     </div>
@@ -91,28 +91,34 @@
             </div>
             <div class="col">
                 <h3>@Localizer["email"]</h3>
-                <a href="mailto:kelechek2020@rambler.ru">kelechek2020@rambler.ru</a>
+                <a href="mailto:kelechek2020@rambler.ru" class="text-danger"><u>kelechek2020@rambler.ru</u></a>
             </div>
         </div>
     </div>
 </div>
 
-<div class="row m-0 pt-3 pb-3" style="background-color: #f7f7f7;">
+<div class="row m-0 pt-3 pb-3" @*style="background-color: #f7f7f7;"*@>
     <div class="col-md-3"></div>
     <div class="col col-md-6">
-        <form id="frmSendMessage" method="get">
+        <form id="frmSendMessage" method="get" class="needs-validation" novalidate>
             <h3 class="pl-3">@Localizer["send message"]</h3>
             <div class="form-row p-3">
                 <input type="text" class="form-control" id="txtName" name="txtName" placeholder="@Localizer["name and surname"]" required>
+                <div class="valid-feedback">
+                    @Localizer["valid"]
+                </div>
             </div>
             <div class="form-row p-3">
-                <input type="text" class="form-control" id="txtEmail" name="txtEmail" placeholder="@Localizer["email"]" required>
+                <input type="email" class="form-control" id="txtEmail" name="txtEmail" placeholder="@Localizer["email"]">
             </div>
             <div class="form-row p-3">
-                <input type="text" class="form-control" id="txtTheme" name="txtTheme" placeholder="@Localizer["topic"]" required>
+                <input type="text" class="form-control" id="txtTheme" name="txtTheme" placeholder="@Localizer["topic"]">
             </div>
             <div class="form-row p-3">
                 <textarea class="form-control" id="txtMessage" name="txtMessage" placeholder="@Localizer["message"]" required></textarea>
+                <div class="valid-feedback">
+                    @Localizer["valid"]
+                </div>
             </div>
             <div class="form-row p-3">
                 <button id="btnSubmitMessage" class="btn btn-danger w-100 justify-content-center" type="submit">
@@ -123,4 +129,56 @@
     </div>
     <div class="col-md-3"></div>
 </div>
+
+<script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function () {
+        'use strict';
+        window.addEventListener('load', function () {
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.getElementsByClassName('needs-validation');
+            // Loop over them and prevent submission
+            var validation = Array.prototype.filter.call(forms, function (form) {
+                form.addEventListener('submit', function (event) {
+                    if (form.checkValidity() === false) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                }, false);
+            });
+        }, false);
+    })();
+</script>
+
+<script>
+    $(function () {
+        $('#frmSendMessage').submit(function (e) {
+            e.preventDefault(); // avoid to execute the actual submit of the form.
+
+            var strNameField = $('#txtName').val();
+            var strMessageField = $('#txtMessage').val();
+
+            console.log("name: " + strNameField);
+            console.log("message: " + strMessageField);
+            if (strNameField.length > 0 && strMessageField.length > 0) {
+                var form = $(this);
+                var url = '/api/ContactUsMessage';
+
+                $("#btnSubmitMessage").empty();
+                $("#btnSubmitMessage").append('<span class="spinner-border spinner-border-sm ml-auto" role="status" aria-hidden="true"></span>');
+
+                $.ajax({
+                    type: "GET",
+                    url: url,
+                    data: form.serialize(), // serializes the form's elements.
+                    success: function (data) {
+                        alert(data); // show response from the asp.net script.
+                        location.reload();
+                    }
+                });
+            }
+        });
+    });
+</script>
 

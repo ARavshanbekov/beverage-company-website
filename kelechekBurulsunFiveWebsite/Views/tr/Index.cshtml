@@ -53,6 +53,17 @@
         position: relative;
     }
 
+    .hero-imageJalalabad27GlassBottleImage {
+        background-image: url('/images/Gallery/IMG_7897(1).webp');
+        height: 70vh;
+        min-height: 65vh;
+        max-height: 70vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+
     .hero-imageAdygeneImage {
         background-image: url('/images/kelechekcompanyadygeneimagedecreased.webp');
         height: 70vh;
@@ -106,7 +117,7 @@
             </div>
             <div></div>
         </div>
-        <div class="col-md hero-imageJalalabad27Image text-center">
+        <div class="col-md hero-imageJalalabad27GlassBottleImage text-center">
         </div>
     </div>
 
@@ -141,19 +152,25 @@
     <div class="row m-0 pt-3 pb-3" style="background-color: #f7f7f7;">
         <div class="col-md-3"></div>
         <div class="col col-md-6">
-            <form id="frmSendMessage" method="get">
+            <form id="frmSendMessage" method="get" class="needs-validation" novalidate>
                 <h3 class="pl-3">@Localizer["send message"]</h3>
                 <div class="form-row p-3">
                     <input type="text" class="form-control" id="txtName" name="txtName" placeholder="@Localizer["name and surname"]" required>
+                    <div class="valid-feedback">
+                        @Localizer["valid"]
+                    </div>
                 </div>
                 <div class="form-row p-3">
-                    <input type="text" class="form-control" id="txtEmail" name="txtEmail" placeholder="@Localizer["email"]" required>
+                    <input type="email" class="form-control" id="txtEmail" name="txtEmail" placeholder="@Localizer["email"]">
                 </div>
                 <div class="form-row p-3">
-                    <input type="text" class="form-control" id="txtTheme" name="txtTheme" placeholder="@Localizer["topic"]" required>
+                    <input type="text" class="form-control" id="txtTheme" name="txtTheme" placeholder="@Localizer["topic"]">
                 </div>
                 <div class="form-row p-3">
                     <textarea class="form-control" id="txtMessage" name="txtMessage" placeholder="@Localizer["message"]" required></textarea>
+                    <div class="valid-feedback">
+                        @Localizer["valid"]
+                    </div>
                 </div>
                 <div class="form-row p-3">
                     <button id="btnSubmitMessage" class="btn btn-danger w-100 justify-content-center" type="submit">
@@ -170,4 +187,56 @@
     $('.counter').countUp();
 
     $('container').height($(window).height() / 2);
+</script>
+
+<script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function () {
+        'use strict';
+        window.addEventListener('load', function () {
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.getElementsByClassName('needs-validation');
+            // Loop over them and prevent submission
+            var validation = Array.prototype.filter.call(forms, function (form) {
+                form.addEventListener('submit', function (event) {
+                    if (form.checkValidity() === false) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                }, false);
+            });
+        }, false);
+    })();
+</script>
+
+<script>
+    $(function () {
+        $('#frmSendMessage').submit(function (e) {
+            e.preventDefault(); // avoid to execute the actual submit of the form.
+
+            var strNameField = $('#txtName').val();
+            var strMessageField = $('#txtMessage').val();
+
+            console.log("name: " + strNameField);
+            console.log("message: " + strMessageField);
+            if (strNameField.length > 0 && strMessageField.length > 0) {
+                var form = $(this);
+                var url = '/api/ContactUsMessage';
+
+                $("#btnSubmitMessage").empty();
+                $("#btnSubmitMessage").append('<span class="spinner-border spinner-border-sm ml-auto" role="status" aria-hidden="true"></span>');
+
+                $.ajax({
+                    type: "GET",
+                    url: url,
+                    data: form.serialize(), // serializes the form's elements.
+                    success: function (data) {
+                        alert(data); // show response from the asp.net script.
+                        location.reload();
+                    }
+                });
+            }            
+        });
+    });
 </script>

@@ -127,7 +127,7 @@
     <value>E-posta</value>
   </data>
   <data name="kelechek company" xml:space="preserve">
-    <value>"Kelechek" K.A.Ş.</value>
+    <value>&amp;ldquo;Kelechek&amp;rdquo; K.A.Ş.</value>
   </data>
   <data name="message" xml:space="preserve">
     <value>Mesaj</value>
@@ -136,7 +136,7 @@
     <value>Adı ve Soyadı</value>
   </data>
   <data name="opening time" xml:space="preserve">
-    <value>Açılış Saati</value>
+    <value>Çalışma Saatleri</value>
   </data>
   <data name="opening time description" xml:space="preserve">
     <value>Saat 09.00 ile akşam 21.00 arasında</value>

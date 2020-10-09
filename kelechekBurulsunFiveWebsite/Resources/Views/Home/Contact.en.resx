@@ -127,7 +127,7 @@
     <value>Email</value>
   </data>
   <data name="kelechek company" xml:space="preserve">
-    <value>"Kelechek" CJSC</value>
+    <value>&amp;ldquo;Kelechek&amp;rdquo; CJSC</value>
   </data>
   <data name="message" xml:space="preserve">
     <value>Message</value>
@@ -155,5 +155,8 @@
   </data>
   <data name="topic" xml:space="preserve">
     <value>Topic</value>
+  </data>
+  <data name="valid" xml:space="preserve">
+    <value>Valid</value>
   </data>
 </root>
