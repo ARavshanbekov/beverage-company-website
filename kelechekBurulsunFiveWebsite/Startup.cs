@@ -3,9 +3,11 @@ using System.Linq;
 using kelechekBurulsunFiveWebsite.CustomCompressionProvider;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Mvc.Razor;
 using Microsoft.AspNetCore.ResponseCompression;
+using Microsoft.AspNetCore.Rewrite;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -60,6 +62,11 @@ namespace kelechekBurulsunFiveWebsite
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            app.UseRewriter(new RewriteOptions()
+               .AddRedirectToWwwPermanent()
+               .AddRedirectToHttpsPermanent()
+            );
+
             app.UseResponseCompression();
 
             var localizationOption = app.ApplicationServices.GetService<IOptions<RequestLocalizationOptions>>();
