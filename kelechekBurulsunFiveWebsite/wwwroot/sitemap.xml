@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+	<!--Main Page-->
+	<url>
+
+		<loc>https://www.kelechek27.com/</loc>
+
+		<lastmod>2020-10-10</lastmod>
+
+		<changefreq>weekly</changefreq>
+
+		<priority>1.0</priority>
+
+	</url>
+
+	<!--EN-->
+	<url>
+		<loc>https://www.kelechek27.com/en</loc>
+
+		<lastmod>2020-10-10</lastmod>
+
+		<changefreq>weekly</changefreq>
+
+		<priority>0.8</priority>
+	</url>		
+	<url>
+		<loc>https://www.kelechek27.com/en/OurProducts</loc>
+
+		<lastmod>2020-10-10</lastmod>
+
+		<changefreq>weekly</changefreq>
+	</url>
+	<url>
+		<loc>https://www.kelechek27.com/en/Contact</loc>
+
+		<lastmod>2020-10-10</lastmod>
+
+		<changefreq>weekly</changefreq>
+	</url>
+
+	<!--RU-->
+  <url>
+    <loc>https://www.kelechek27.com/ru</loc>
+
+    <lastmod>2020-10-10</lastmod>
+
+    <changefreq>weekly</changefreq>
+
+    <priority>0.8</priority>
+  </url>  
+  <url>
+    <loc>https://www.kelechek27.com/ru/OurProducts</loc>
+
+    <lastmod>2020-10-10</lastmod>
+
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.kelechek27.com/ru/Contact</loc>
+
+    <lastmod>2020-10-10</lastmod>
+
+    <changefreq>weekly</changefreq>
+  </url>
+
+	<!--TR-->
+  <url>
+    <loc>https://www.kelechek27.com/tr</loc>
+
+    <lastmod>2020-10-10</lastmod>
+
+    <changefreq>weekly</changefreq>
+
+    <priority>0.8</priority>
+  </url>  
+  <url>
+    <loc>https://www.kelechek27.com/tr/OurProducts</loc>
+
+    <lastmod>2020-10-10</lastmod>
+
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.kelechek27.com/tr/Contact</loc>
+
+    <lastmod>2020-10-10</lastmod>
+
+    <changefreq>weekly</changefreq>
+  </url>
+  
+  <!--KG-->
+  <url>
+    <loc>https://www.kelechek27.com/ky</loc>
+
+    <lastmod>2020-10-10</lastmod>
+
+    <changefreq>weekly</changefreq>
+
+    <priority>0.8</priority>
+  </url>  
+  <url>
+    <loc>https://www.kelechek27.com/ky/OurProducts</loc>
+
+    <lastmod>2020-10-10</lastmod>
+
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.kelechek27.com/ky/Contact</loc>
+
+    <lastmod>2020-10-10</lastmod>
+
+    <changefreq>weekly</changefreq>
+  </url>
+</urlset>
