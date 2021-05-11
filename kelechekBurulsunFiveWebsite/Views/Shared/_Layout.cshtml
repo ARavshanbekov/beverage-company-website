@@ -78,18 +78,20 @@
     <footer class="bg-dark text-light">
         <div class="container">                        
             <div class="row pt-4 pb-4">
-                <div class="col-md justify-content-center text-center pb-3 p-md-0">
+                <div class="col-md justify-content-center text-center pb-3 p-md-0 ">
                     <h4>@Localizer["social connections"]</h4>
                     <a href="https://www.facebook.com/Kelechek2020" class="d-inline d-md-block"><i class="fa fa-facebook-official" style="font-size:48px; color: #4267B2;" aria-hidden="true"></i><p class="my-auto d-inline text-light justify-content-center pl-1">Facebook</p></a>
                     <a href="https://www.instagram.com/zao.kelechek/" class="d-inline d-md-block"><i class="fa fa-instagram" style="font-size:48px; color: #F56040;" aria-hidden="true"></i> <p class="my-auto d-inline text-light justify-content-center pl-1">Instagram</p></a>
                 </div>
                 <div class="col-md justify-content-center text-center">
+                    <div class="w-100 border-top d-md-none d-block pt-3 pt-md-0"></div>
                     <h4>@Localizer["pages"]</h4>
                     <a class="p-2 text-danger d-block" asp-area="" asp-controller="@lang" asp-action="Index"><u>@Localizer["start page"]</u></a>
                     <a class="p-2 text-danger d-block" asp-area="" asp-controller="@lang" asp-action="OurProducts"><u>@Localizer["our products"]</u></a>
                     <a class="p-2 text-danger d-block" asp-area="" asp-controller="@lang" asp-action="Contact"><u>@Localizer["contact us"]</u></a>
                 </div>
                 <div class="col-md">
+                    <div class="w-100 border-top d-md-none d-block pt-3 pt-md-0"></div>
                     <h4 class="text-center">@Localizer["contact lines"]</h4>
                     <div class="row">
                         <div class="col-2 p-2">
@@ -97,7 +99,8 @@
                         </div>
                         <div class="col">
                             <h5>@Localizer["phone number"]</h5>
-                            <a href="tel:+996776707009" class="text-danger"><u>+996 (776) 70-70-09</u></a>
+                            <a href="tel:+996999917777" class="text-danger"><u>+996 (999) 91-77-77</u></a><br />
+                            <a href="tel:+996222917777" class="text-danger"><u>+996 (222) 91-77-77</u></a>
                         </div>
                     </div>
                     <div class="row">
@@ -114,6 +117,9 @@
             <div class="row border-top pb-1">
                 <div class="col-md pt-3">
                     <span class="text-left">@await Html.PartialAsync("_SelectLanguagePartial")</span>
+                </div>
+                <div class="col-md text-center p-3">
+                    @Localizer["author part"]
                 </div>
                 <div class="col-md text-center p-3">
                     @Localizer["copyright part"]
